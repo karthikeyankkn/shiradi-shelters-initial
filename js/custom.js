@@ -1,7 +1,8 @@
 $(document).ready(function(){
 // find url segment
 	var url = location.href
-	var segment = url.split("/").length - 2 - (url.indexOf("https://")==-1?0:2);
+	// var segment = url.split("/").length - 2 - (url.indexOf("http://")==-1?0:2);
+	var segment = 0;
 	console.log("Segment: "+segment);
 
 		if (segment == 0) {
