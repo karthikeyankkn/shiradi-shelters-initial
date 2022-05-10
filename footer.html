@@ -1,0 +1,158 @@
+<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-lg-3 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Registered Office</h3>
+					<ul class="footer__link">
+						<li>
+							<p>No.8/114-6, II floor, Trishul Flats,
+								Old Trunk Road, Pallavaram, Chennai- 43.</p>
+						</li>
+						<li>Phone : <a href="tel:+91 9791121116">+91 9791121116</a></li>
+					</ul>
+					
+				</div>
+				<div class="col-sm-5 col-lg-3 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Get In Touch – Chennai</h3>
+					<ul class="footer__link">
+						<li>
+							<p>No.8/114-6, II floor, Trishul Flats,
+								Old Trunk Road, Pallavaram, Chennai- 43.</p>
+						</li>
+						<li>
+							Phone : <a href="tel:+91 9791121116">+91 9791121116</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Important Links</h3>
+					<ul class="footer__link">
+						<li>
+							<a href="https://shirdishelters.com/">Home</a>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/about-us/">About Us</a>
+						</li>
+
+
+						<li>
+							<a href=""><strong>Projects</strong></a>
+							<ul class="list">
+								
+									<ul class="sub-list">
+										<li><a class="dropdown-item" href="https://shirdishelters.com/completed-projects/">Completed Projects</a></li>
+										<li><a href="#"><a class="dropdown-item" href="https://shirdishelters.com/ongoing-projects/">Ongoing Projects</a></a></li>
+										<li><a class="dropdown-item" href="https://shirdishelters.com/upcoming-projects/">Upcoming Projects</a></li>
+										
+									</ul>
+							
+						
+							</ul>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/blog/">News and Event</a>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/gallery/">Gallery</a>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/loan-guide/">Loan Guide</a>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/testimonials/">Testimonials</a>
+						</li>
+						<li>
+							<a href="https://shirdishelters.com/contact-us/">Contact Us</a>
+						</li>
+          </ul>
+				</div>
+				<div class="col-sm-8 col-lg-4 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Newsletter</h3>
+					<p>You can trust us. we only send promo offers,</p>
+					<form action="" class="form-subscribe">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Your email address" required>
+							<div class="input-group-append">
+								<button class="btn-append" type="submit"><i class="lnr lnr-arrow-right"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="d-sm-flex justify-content-between footer__bottom top-border">
+				<p>Copyright © 2022 All rights reserved. </p>
+				<ul class="social-icons mt-2 mt-sm-0">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#" class="single_social_icon"><i class="ti-linkedin"></i></a></li>
+
+					<li><a href="#" class="single_social_icon"><i class="ti-google"></i></a></li>
+					<li><a href="#"><i class="ti-flickr-alt"></i></a></li>		
+				</ul>
+			</div>
+		</div>
+
+
+
+		<script>
+		var testimonialCarousel = $('.testimonialCarousel');
+      testimonialCarousel.owlCarousel({
+      loop:true,
+      margin:80,
+      startPosition: 2,
+      nav: false,
+      responsiveClass:true,
+      responsive:{
+        0:{
+            items:1
+        },
+        1000:{
+            items:2,
+            loop:true
+        }
+      }
+    });
+
+    var heroCarousel = $('.heroCarousel');
+      heroCarousel.owlCarousel({
+      loop:true,
+      margin:10,
+      nav: false,
+      startPosition: 3,
+      responsiveClass:true,
+      autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
+      responsive:{
+        0:{
+            items:1
+        }
+      }
+	});
+
+	var dropToggle = $('.menu_right > li').has('ul').children('a');
+	dropToggle.on('click', function() {
+		dropToggle.not(this).closest('li').find('ul').slideUp(200);
+		$(this).closest('li').children('ul').slideToggle(200);
+		return false;
+	});
+
+	$( ".toggle_icon" ).on('click', function() {
+		$( 'body' ).toggleClass( "open" );
+	});
+
+
+	// custom sidebar code
+	$(".list li a").click(function(){
+		$(this).siblings(".sub-list").slideToggle();
+	});
+	</script>
+	<!-- banner only for index -->
+	<script type="text/javascript">
+		var current_url = location.pathname
+		if (current_url == "/" || current_url == "/index.html") {
+			$(".heroCarousel").show();
+		}else{
+			$(".heroCarousel").hide();
+		}
+	</script>
