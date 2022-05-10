@@ -6,7 +6,7 @@ $(document).ready(function(){
 	console.log("Segment: "+segment);
 
 		if (segment == 0) {
-			$("nav").load("header.html"); 
+			// $("nav").load("header.html"); 
 	  	$("footer").load("footer.html"); 
 		}else{
 			console.log("Js Header will not work for this page");
